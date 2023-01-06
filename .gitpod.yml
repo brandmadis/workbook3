@@ -1,0 +1,3 @@
+# List the start up tasks.
+tasks:
+  - init: python -m pip install Django

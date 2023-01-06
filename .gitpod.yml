@@ -1,3 +1,6 @@
+image:
+  file: .gitpod.dockerfile
+  
 tasks:
   - init: |
       python -m venv venv

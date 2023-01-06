@@ -5,6 +5,7 @@ tasks:
   - init: psql -f database-setup.sql
     command: 
       python -m pip install Django
+      python -m pip install psycopg2-binary
       
 ports:
   - port: 8000

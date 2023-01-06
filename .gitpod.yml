@@ -1,3 +1,16 @@
-# List the start up tasks.
+image:
+  file: .gitpod.Dockerfile
+
 tasks:
-  - init: python -m pip install Django
+  - init: psql -f database-setup.sql
+    command: 
+      pipenv install django
+      pipenv shell
+      
+ports:
+  - port: 8000
+    onOpen: open-preview
+  - port: 5432
+    onOpen: ignore
+  - port : 3000
+    onOpen: notify

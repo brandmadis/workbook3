@@ -4,7 +4,7 @@ image:
 tasks:
   - init: psql -f database-setup.sql
     command: 
-      pipenv install django
+      python -m pip install Django
       
 ports:
   - port: 8000

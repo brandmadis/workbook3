@@ -27,10 +27,13 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+LOGIN_URL = '/test_login'
 
 # Application definition
 
 INSTALLED_APPS = [
+    'exercises.apps.ExercisesConfig',
+    'javascript.apps.JavascriptConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -118,3 +121,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+ALLOWED_HOSTS = ['*']
+X_FRAME_OPTIONS = '*'

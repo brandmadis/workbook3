@@ -1,3 +1,8 @@
+      psql -f database-setup.sql
+
+image:
+  file: .gitpod.Dockerfile
+
 # Developing Django on Repl.it
 
 - Fork this template to get started
